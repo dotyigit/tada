@@ -40,7 +40,7 @@ exports.findAll = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                err.message || 'Some error occurred while retrieving tutorials.'
+                err.message || 'Some error occurred while retrieving todos.'
         });
     });
 };
@@ -54,7 +54,7 @@ exports.findOne = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: 'Error retrieving Tutorial with id=' + id
+                message: 'Error retrieving Todo with id=' + id
         });
     });
     
